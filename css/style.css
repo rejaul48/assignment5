@@ -10,4 +10,16 @@
      /* For Firefox */
  }
 
+
+ .active_btn_donate_history{
+    background-color: rgb(180, 244, 97);
+    color: rgb(17, 17, 17) ;
+    border: 1px solid rgb(180, 244, 97);
+ }
  
+ .inactive_btn_donate_history{
+    background: none;
+    border: 1px solid gray;
+    color: rgb(17, 17, 17) ;
+    
+ }
