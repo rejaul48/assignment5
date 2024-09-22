@@ -26,7 +26,7 @@
                         statusBtn: 'rgba(17, 17, 17, 0.05)',
                         textPrimary: 'rgb(17, 17, 17)',
                         textSecondary: 'rgba(17, 17, 17, 0.7)',
-                    
+
                     },
                     fontFamily: {
                         lexend: ['Lexend', 'sans-serif'],
@@ -66,110 +66,168 @@
 
 
     <!-- this is main section start -->
-     <main class="bg-white pb-20">
-        <!-- donation and history button -->
-        <div class="donate_history_btn flex justify-center items-center gap-5 pt-20">
-            <a href="#" class="bg-primary px-3 py-2 rounded-md font-semibold text-md border-2 border-primary 
+    <main class="bg-white pb-20">
+
+        <section class="max-w-[1300px] mx-auto">
+            <!-- donation and history button -->
+            <div class="donate_history_btn flex justify-center items-center gap-5 pt-20">
+                <a href="#" class="bg-primary px-3 py-2 rounded-md font-semibold text-md border-2 border-primary 
             hover:bg-white hover:ease-in-out
             ">Donation</a>
-            <a href="#" class="border-2 border-solid border-gray-200 px-3 py-2 rounded-md  text-md text-gray-400
+                <a href="#" class="border-2 border-solid border-gray-200 px-3 py-2 rounded-md  text-md text-gray-400
             hover:bg-primary hover:text-black hover:border-primary
             ">History</a>
-        </div>
-
-        <!-- donation card -->
-
-        <section>
-
-            <!-- Donate Card 1 -->
-            <div class="donate_card flex gap-4 mx-40 border-2 border-gray-200 p-3 rounded-md mt-8">
-
-                <div class="left_side_img_part w-2/5">
-                    <img src="assets/noakhali.png" alt="" class="w-full h-full">
-
-                </div>
-                <div class="right_side_details_part w-3/5">
-
-                    <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
-                        <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
-                        <span class="text-textSecondary">0</span>
-                        <span class="text-textSecondary">BDT</span>
-                    </button>
-
-                    <h2 class="text-xl font-semibold text-textPrimary my-4">Donate for Flood at Noakhali, Bangladesh</h2>
-                    <p class="text-textSecondary text-[16px] font-[300]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-
-                    <div class="donate_input_field mt-6">
-                        <input type="number" placeholder="Enter Donation Amount" required class="input input-bordered w-full py-3" />
-                        <button class="bg-primary text-xl font-semibold text-textPrimary w-full py-3 rounded-md mt-4">Donate Now</button>
-                    </div>
-
-
-                </div>
-
             </div>
 
-            <!-- Donate Card 2 -->
-            <div class="donate_card flex gap-4 mx-40 border-2 border-gray-200 p-3 rounded-md mt-8">
+            <!-- donation card -->
 
-                <div class="left_side_img_part w-2/5">
-                    <img src="assets/feni.png" alt="" class="w-full h-full">
+            <section class="donation-card-section">
 
-                </div>
-                <div class="right_side_details_part w-3/5">
+                <!-- Donate Card 1 -->
+                <div class="donate_card flex gap-4 mx-40 border-2 border-gray-200 p-3 rounded-lg mt-8">
 
-                    <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
-                        <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
-                        <span class="text-textSecondary">0</span>
-                        <span class="text-textSecondary">BDT</span>
-                    </button>
+                    <div class="left_side_img_part w-2/5">
+                        <img src="assets/noakhali.png" alt="" class="w-full h-full">
 
-                    <h2 class="text-xl font-semibold text-textPrimary my-4">Donate for Flood at Noakhali, Bangladesh</h2>
-                    <p class="text-textSecondary text-[16px] font-[300]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    </div>
+                    <div class="right_side_details_part w-3/5">
 
-                    <div class="donate_input_field mt-6">
-                        <input type="number" placeholder="Enter Donation Amount" required class="input input-bordered w-full py-3" />
-                        <button class="bg-primary text-xl font-semibold text-textPrimary w-full py-3 rounded-md mt-4">Donate Now</button>
+                        <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
+                            <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
+                            <span class="text-textSecondary">0</span>
+                            <span class="text-textSecondary">BDT</span>
+                        </button>
+
+                        <h2 class="text-xl font-semibold text-textPrimary my-4">Donate for Flood at Noakhali, Bangladesh
+                        </h2>
+                        <p class="text-textSecondary text-[16px] font-[300]"> The recent floods in Noakhali have caused
+                            significant damage to homes infrastructure. Your donation will help provide essential
+                            supplies and to those affected by this disaster. Every contribution, big or small, makes
+                            difference. Please join us in supporting the relief efforts and making a positive impact on
+                            the lives of those in need.</p>
+
+                        <div class="donate_input_field mt-6">
+                            <input type="number" placeholder="Enter Donation Amount" required
+                                class="input input-bordered w-full py-3" />
+                            <button onclick="my_modal_4.showModal()"
+                                class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
+                                hover:border-2 hover:border-primary hover:bg-white
+                                ">Donate
+                                Now</button>
+                        </div>
+
+
                     </div>
 
-
                 </div>
 
-            </div>
+                <!-- Donate Card 2 -->
+                <div class="donate_card flex gap-4 mx-40 border-2 border-gray-200 p-3 rounded-lg mt-8">
 
-            <!-- Donate Card 3 -->
-            <div class="donate_card flex gap-4 mx-40 border-2 border-gray-200 p-3 rounded-md mt-8">
+                    <div class="left_side_img_part w-2/5">
+                        <img src="assets/feni.png" alt="" class="w-full h-full">
 
-                <div class="left_side_img_part w-2/5">
-                    <img src="assets/quota-protest.png" alt="" class="w-full h-full">
+                    </div>
+                    <div class="right_side_details_part w-3/5">
 
-                </div>
-                <div class="right_side_details_part w-3/5">
+                        <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
+                            <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
+                            <span class="text-textSecondary">0</span>
+                            <span class="text-textSecondary">BDT</span>
+                        </button>
 
-                    <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
-                        <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
-                        <span class="text-textSecondary">0</span>
-                        <span class="text-textSecondary">BDT</span>
-                    </button>
+                        <h2 class="text-xl font-semibold text-textPrimary my-4">Donate for Flood at Noakhali, Bangladesh
+                        </h2>
+                        <p class="text-textSecondary text-[16px] font-[300]"> The recent floods in Noakhali have caused
+                            significant damage to homes infrastructure. Your donation will help provide essential
+                            supplies and to those affected by this disaster. Every contribution, big or small, makes
+                            difference. Please join us in supporting the relief efforts and making a positive impact on
+                            the lives of those in need.</p>
 
-                    <h2 class="text-xl font-semibold text-textPrimary my-4">Donate for Flood at Noakhali, Bangladesh</h2>
-                    <p class="text-textSecondary text-[16px] font-[300]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                        <div class="donate_input_field mt-6">
+                            <input type="number" placeholder="Enter Donation Amount" required
+                                class="input input-bordered w-full py-3" />
+                                <button onclick="my_modal_4.showModal()"
+                                class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
+                                hover:border-2 hover:border-primary hover:bg-white
+                                ">Donate
+                                Now</button>
+                        </div>
 
-                    <div class="donate_input_field mt-6">
-                        <input type="number" placeholder="Enter Donation Amount" required class="input input-bordered w-full py-3" />
-                        <button class="bg-primary text-xl font-semibold text-textPrimary w-full py-3 rounded-md mt-4">Donate Now</button>
+
                     </div>
 
+                </div>
+
+                <!-- Donate Card 3 -->
+                <div class="donate_card flex gap-4 mx-40 border-2 border-gray-200 p-3 rounded-lg mt-8">
+
+                    <div class="left_side_img_part w-2/5">
+                        <img src="assets/quota-protest.png" alt="" class="w-full h-full">
+
+                    </div>
+                    <div class="right_side_details_part w-3/5">
+
+                        <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
+                            <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
+                            <span class="text-textSecondary">0</span>
+                            <span class="text-textSecondary">BDT</span>
+                        </button>
+
+                        <h2 class="text-xl font-semibold text-textPrimary my-4">Donate for Flood at Noakhali, Bangladesh
+                        </h2>
+                        <p class="text-textSecondary text-[16px] font-[300]"> The recent floods in Noakhali have caused
+                            significant damage to homes infrastructure. Your donation will help provide essential
+                            supplies and to those affected by this disaster. Every contribution, big or small, makes
+                            difference. Please join us in supporting the relief efforts and making a positive impact on
+                            the lives of those in need.</p>
+
+                        <div class="donate_input_field mt-6">
+                            <input type="number" placeholder="Enter Donation Amount" required
+                                class="input input-bordered w-full py-3" />
+                                <button onclick="my_modal_4.showModal()"
+                                class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
+                                hover:border-2 hover:border-primary hover:bg-white
+                                ">Donate
+                                Now</button>
+                        </div>
+
+
+                    </div>
 
                 </div>
 
-            </div>
 
+            </section>
 
         </section>
 
-     </main>
+    </main>
     <!-- this is main section end -->
+
+    <!-- Confirmation modal -->
+
+    <!-- The button to open modal -->
+    <!-- You can open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_4.showModal()">open modal</button> -->
+    <dialog id="my_modal_4" class="modal">
+    <div class="modal-box w-6/12 max-w-5xl text-center text-textPrimary">
+        <h3 class="text-4xl font-bold">Congrates!</h3>
+        <div class="flex justify-center items-center my-8">
+            <img src="assets/coin.png" alt="">
+        </div>
+        <p class="py-4">You Have Donated for Humankind</p>
+        <h2 class="text-xl font-bold">Successfully</h2>
+        <div class="modal-action flex justify-center">
+            <form method="dialog">
+                <!-- if there is a button, it will close the modal -->
+                <button class="btn px-20 font-normal">Close Confirmation</button>
+            </form>
+        </div>
+    </div>
+    </dialog>
+
+    <!-- Confirmation modal -->
 
     <footer class="h-24">
 
