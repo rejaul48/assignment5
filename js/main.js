@@ -6,8 +6,6 @@ const donateHistory = document.getElementById('donate_history_btn');
 // mybalance
 const myBalance = document.getElementById('myBalance');
 
-
-
 donateBtn.addEventListener('click', function () {
 
     donateHistoryBtn('donation_container');
