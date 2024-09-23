@@ -1,6 +1,6 @@
 
-
-function donateHistoryBtn(id){
+// donate and history toggle button
+function donateHistoryBtn(id) {
 
     document.getElementById('donation_container').classList.add('hidden');
     document.getElementById('donation_history_container').classList.add('hidden');
@@ -8,3 +8,6 @@ function donateHistoryBtn(id){
     document.getElementById(id).classList.remove('hidden');
 
 }
+
+
+ 

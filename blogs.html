@@ -123,7 +123,8 @@
         <section class="max-w-[1300px] mx-auto">
 
             <div class="text-center pt-12">
-                <h2 class=" text-2xl md:text-4xl font-bold text-textPrimary pb-2 md:pb-12">FREQUENTLY ASKED QUESTIONS</h2>
+                <h2 class=" text-2xl md:text-4xl font-bold text-textPrimary pb-2 md:pb-12">FREQUENTLY ASKED QUESTIONS
+                </h2>
             </div>
 
             <div class="faq_container md:w-full md:flex md:items-center gap-8 ">
@@ -135,38 +136,64 @@
                 <div class="right md:w-4/6 px-8 md:px-4">
 
                     <div class="join join-vertical w-full">
+
                         <div class="collapse collapse-arrow join-item border-base-300 border">
                             <input type="radio" name="my-accordion-4" checked="checked" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
+                            <div class="collapse-title text-xl font-medium">What is the DOM, and how does it relate to
+                                HTML and JavaScript?
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>Answer: <br> The Document Object Model (DOM) is a programming interface that
+                                    represents the
+                                    structure of a document as a tree of objects. In the context of HTML, the DOM allows
+                                    JavaScript to interact with and manipulate the elements and content of a webpage.
+                                    Each HTML element is represented as a node in the DOM tree, enabling dynamic changes
+                                    to the document's structure, style, and content through JavaScript.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-arrow join-item border-base-300 border">
                             <input type="radio" name="my-accordion-4" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
+                            <div class="collapse-title text-xl font-medium">How can you select multiple elements in the
+                                DOM, and what are some common methods?
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>Answer: <br>
+                                    You can select multiple elements in the DOM using methods such as querySelectorAll,
+                                    which returns a NodeList of all matching elements based on a specified CSS selector.
+                                    For example, document.querySelectorAll('.className') selects all elements with the
+                                    class className. Other methods include getElementsByClassName and
+                                    getElementsByTagName, which return live HTMLCollections of matching elements.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-arrow join-item border-base-300 border">
                             <input type="radio" name="my-accordion-4" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
+                            <div class="collapse-title text-xl font-medium">What is event delegation, and how does it
+                                improve performance in DOM manipulation?
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>Answer: <br>
+                                    Event delegation is a technique where a single event listener is added to a parent
+                                    element instead of individual listeners on multiple child elements. This approach
+                                    improves performance by reducing the number of event listeners in the DOM,
+                                    especially in cases where elements are added or removed dynamically. When an event
+                                    occurs, it bubbles up to the parent, allowing you to handle events for child
+                                    elements efficiently using the parent listener.</p>
                             </div>
                         </div>
                         <div class="collapse collapse-arrow join-item border-base-300 border">
                             <input type="radio" name="my-accordion-4" />
-                            <div class="collapse-title text-xl font-medium">Click to open this one and close others
+                            <div class="collapse-title text-xl font-medium">What is the difference between innerHTML, textContent, and innerText?
                             </div>
                             <div class="collapse-content">
-                                <p>hello</p>
+                                <p>Answer: <br>
+
+                                    innerHTML: Allows you to get or set HTML content, including tags. Be cautious as it can expose your application to XSS attacks if not properly sanitized. <br><br>
+                                    textContent: Retrieves or sets the text content of an element, excluding any HTML tags. It's faster and safer than innerHTML for text manipulation. <br> <br>
+                                    innerText: Similar to textContent, but it respects CSS styles and may return a different result based on the element's visibility. It can be less consistent across browsers.
+                                    </p>
                             </div>
                         </div>
+
 
                     </div>
 

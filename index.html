@@ -69,7 +69,7 @@
                
                    ">
                         <img src="assets/coin.png" alt="coin png">
-                        <span class="text-xl font-semibold">5500</span>
+                        <span class="text-xl font-semibold" id="myBalance">5500</span>
                         <span class="text-xl font-semibold">BDT</span>
                     </div>
 
@@ -147,7 +147,7 @@
                 <!-- Donate Card 1 -->
                 <div class="donate_card lg:flex gap-4 mx-4 lg:mx-32 border-2 border-gray-200 p-3 rounded-lg mt-8
 
-          
+             
 
 
                 ">
@@ -166,11 +166,11 @@
 
                         <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
                             <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
-                            <span class="text-textSecondary">0</span>
+                            <span class="text-textSecondary donateStatus">0</span>
                             <span class="text-textSecondary">BDT</span>
                         </button>
 
-                        <h2 class="text-xl font-semibold text-textPrimary my-4 
+                        <h2 class="text-xl donateFor font-semibold text-textPrimary my-4 
                          
                         ">Donate for Flood at Noakhali, Bangladesh
                         </h2>
@@ -182,9 +182,10 @@
 
                         <div class="donate_input_field mt-6">
                             <input type="number" placeholder="Enter Donation Amount" required
-                                class="input input-bordered w-full py-3" />
+                                class="input donateInput  input-bordered w-full py-3 donate_input" />
                             <button onclick="my_modal_4.showModal()" class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
-                                hover:border-2 hover:border-primary hover:bg-white
+                            donateConfermBtn    
+                            hover:border-2 hover:border-primary hover:bg-white
                                 ">Donate
                                 Now</button>
                         </div>
@@ -197,7 +198,7 @@
                 <!-- Donate Card 2 -->
                 <div class="donate_card lg:flex gap-4 mx-4 lg:mx-32 border-2 border-gray-200 p-3 rounded-lg mt-8
 
-          
+      
 
 
                 ">
@@ -216,25 +217,27 @@
 
                         <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
                             <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
-                            <span class="text-textSecondary">0</span>
+                            <span class="text-textSecondary donateStatus">0</span>
                             <span class="text-textSecondary">BDT</span>
                         </button>
 
-                        <h2 class="text-xl font-semibold text-textPrimary my-4 
+                        <h2 class="text-xl donateFor font-semibold text-textPrimary my-4 
                          
-                        ">Donate for Flood at Noakhali, Bangladesh
+                        ">Donate for Flood at Barishal, Bangladesh
                         </h2>
-                        <p class="text-textSecondary text-[16px] font-[300]"> The recent floods in Noakhali have caused
-                            significant damage to homes infrastructure. Your donation will help provide essential
-                            supplies and to those affected by this disaster. Every contribution, big or small, makes
-                            difference. Please join us in supporting the relief efforts and making a positive impact on
-                            the lives of those in need.</p>
+                        <p class="text-textSecondary text-[16px] font-[300]">Help us provide urgent relief for those
+                            affected by the devastating floods in Barishal. Your donation will supply essential food,
+                            clean water, and medical aid to families in need. Together, we can support recovery efforts
+                            and restore hope to this community. Every contribution counts! Please donate today to make a
+                            difference in the lives of those impacted by this disaster. Stand with Barishal as they
+                            rebuild and recover from this tragedy.</p>
 
                         <div class="donate_input_field mt-6">
                             <input type="number" placeholder="Enter Donation Amount" required
-                                class="input input-bordered w-full py-3" />
+                                class="input donateInput input-bordered w-full py-3 donate_input" />
                             <button onclick="my_modal_4.showModal()" class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
-                                hover:border-2 hover:border-primary hover:bg-white
+                            donateConfermBtn  
+                            hover:border-2 hover:border-primary hover:bg-white
                                 ">Donate
                                 Now</button>
                         </div>
@@ -246,7 +249,7 @@
                 <!-- Donate Card 3 -->
                 <div class="donate_card lg:flex gap-4 mx-4 lg:mx-32 border-2 border-gray-200 p-3 rounded-lg mt-8
 
-          
+         
 
 
                 ">
@@ -265,25 +268,26 @@
 
                         <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
                             <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
-                            <span class="text-textSecondary">0</span>
+                            <span class="text-textSecondary donateStatus">0</span>
                             <span class="text-textSecondary">BDT</span>
                         </button>
 
-                        <h2 class="text-xl font-semibold text-textPrimary my-4 
+                        <h2 class="text-xl donateFor font-semibold text-textPrimary my-4 
                          
-                        ">Donate for Flood at Noakhali, Bangladesh
-                        </h2>
-                        <p class="text-textSecondary text-[16px] font-[300]"> The recent floods in Noakhali have caused
-                            significant damage to homes infrastructure. Your donation will help provide essential
-                            supplies and to those affected by this disaster. Every contribution, big or small, makes
-                            difference. Please join us in supporting the relief efforts and making a positive impact on
-                            the lives of those in need.</p>
+                        ">Donate for to raise voice against dictator</h2>
+                        <p class="text-textSecondary text-[16px] font-[300]">
+                            Support our fight for democracy and justice in Bangladesh. Your donation will help fund
+                            protests against the Prime Minister's oppressive policies and promote freedom of expression.
+                            Together, we can amplify voices calling for change, provide essential resources, and ensure
+                            that every citizen’s rights are upheld. Stand with us in this crucial movement for a
+                            brighter future. Every contribution makes a difference—help us make our voices heard!</p>
 
                         <div class="donate_input_field mt-6">
                             <input type="number" placeholder="Enter Donation Amount" required
-                                class="input input-bordered w-full py-3" />
+                                class="input donateInput input-bordered w-full py-3 donate_input" />
                             <button onclick="my_modal_4.showModal()" class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
-                                hover:border-2 hover:border-primary hover:bg-white
+                            donateConfermBtn   
+                            hover:border-2 hover:border-primary hover:bg-white
                                 ">Donate
                                 Now</button>
                         </div>
@@ -303,37 +307,10 @@
 
             <!-- donation history card -->
 
-            <section>
-                <!-- donation history card -->
-                <div class="donate_history_card border-2 border-gray-200 mx-4 lg:mx-32 p-4 rounded-lg mt-8
+            <section id="history_container">
                 
-            ">
-                    <h2 class="text-md md:text-xl font-semibold text-textPrimary"><span>96500</span> Taka is Donated for
-                        famine-2024 at
-                        Feni, Bangladesh</h2>
-                    <p class="text-[16px] font-[300] text-textSecondary mt-2"><span>Date : Tue Sep 17 2024 08:39:11 GMT
-                            +0600 (Bangladesh Standard Time)</span></p>
-                </div>
+                <!-- your donation history added here -->
 
-                <!-- donation history card -->
-                <div class="donate_history_card border-2 border-gray-200 mx-4 lg:mx-32 p-4 rounded-lg mt-8
-            ">
-                    <h2 class="text-md md:text-xl font-semibold text-textPrimary"><span>96500</span> Taka is Donated for
-                        famine-2024 at
-                        Feni, Bangladesh</h2>
-                    <p class="text-[16px] font-[300] text-textSecondary mt-2"><span>Date : Tue Sep 17 2024 08:39:11 GMT
-                            +0600 (Bangladesh Standard Time)</span></p>
-                </div>
-
-                <!-- donation history card -->
-                <div class="donate_history_card border-2 border-gray-200 mx-4 lg:mx-32 p-4 rounded-lg mt-8
-            ">
-                    <h2 class="text-md md:text-xl font-semibold text-textPrimary"><span>96500</span> Taka is Donated for
-                        famine-2024 at
-                        Feni, Bangladesh</h2>
-                    <p class="text-[16px] font-[300] text-textSecondary mt-2"><span>Date : Tue Sep 17 2024 08:39:11 GMT
-                            +0600 (Bangladesh Standard Time)</span></p>
-                </div>
 
             </section>
 
@@ -358,7 +335,8 @@
             <div class="modal-action flex justify-center">
                 <form method="dialog">
                     <!-- if there is a button, it will close the modal -->
-                    <button class="btn px-20 text-[10px] md:text-[18px] font-semibold md:font-normal">Close Confirmation</button>
+                    <button class="btn px-20 text-[10px] md:text-[18px] font-semibold md:font-normal">Close
+                        Confirmation</button>
                 </form>
             </div>
         </div>
