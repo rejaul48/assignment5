@@ -43,7 +43,7 @@
 
 <body class="font-lexend">
 
-    <section>
+    <section id="header-main">
         <!-- header part start-->
 
         <header class="bg-bgPrimary">
@@ -113,10 +113,10 @@
         <!-- donation and history button -->
         <div class="donation_button_container">
             <ul class="donate_history_btn flex justify-center items-center gap-5 pt-20">
-                <li> <a href="#" id="donate_btn" class=" active_btn_donate_history px-3 py-2 rounded-md font-semibold text-md  
+                <li> <a href="#" id="donate_btn" class="active_btn_donate_history px-3 py-2 rounded-md font-semibold text-md  
                  border-2 border-primary
                     ">Donation</a></li>
-                <li> <a href="#" id="donate_history_btn" class=" px-3 py-2 rounded-md text-md  inactive_btn_donate_history   border-2 border-primary
+                <li> <a href="#" id="donate_history_btn" class=" px-3 py-2 rounded-md text-md font-semibold  inactive_btn_donate_history   border-2 border-primary
                     
                     ">History</a></li>
             </ul>
@@ -131,7 +131,7 @@
     <!-- this is main section start -->
     <main class="bg-white pb-20">
 
-        <section id="donation_container" class="max-w-[1300px] mx-auto dontaion ">
+        <section id="donation_container" class="max-w-[1300px] mx-auto">
 
 
             <!-- donation card -->
@@ -146,9 +146,6 @@
 
                 <!-- Donate Card 1 -->
                 <div class="donate_card lg:flex gap-4 mx-4 lg:mx-32 border-2 border-gray-200 p-3 rounded-lg mt-8
-
-             
-
 
                 ">
 
@@ -183,7 +180,7 @@
                         <div class="donate_input_field mt-6">
                             <input type="number" placeholder="Enter Donation Amount" required
                                 class="input donateInput  input-bordered w-full py-3 donate_input" />
-                            <button onclick="my_modal_4.showModal()" class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
+                            <button class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
                             donateConfermBtn    
                             hover:border-2 hover:border-primary hover:bg-white
                                 ">Donate
@@ -235,7 +232,7 @@
                         <div class="donate_input_field mt-6">
                             <input type="number" placeholder="Enter Donation Amount" required
                                 class="input donateInput input-bordered w-full py-3 donate_input" />
-                            <button onclick="my_modal_4.showModal()" class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
+                            <button class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
                             donateConfermBtn  
                             hover:border-2 hover:border-primary hover:bg-white
                                 ">Donate
@@ -279,13 +276,13 @@
                             Support our fight for democracy and justice in Bangladesh. Your donation will help fund
                             protests against the Prime Minister's oppressive policies and promote freedom of expression.
                             Together, we can amplify voices calling for change, provide essential resources, and ensure
-                            that every citizen’s rights are upheld. Stand with us in this crucial movement for a
+                            that every citizen's rights are upheld. Stand with us in this crucial movement for a
                             brighter future. Every contribution makes a difference—help us make our voices heard!</p>
 
                         <div class="donate_input_field mt-6">
                             <input type="number" placeholder="Enter Donation Amount" required
                                 class="input donateInput input-bordered w-full py-3 donate_input" />
-                            <button onclick="my_modal_4.showModal()" class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
+                            <button class=" btn bg-primary text-xl font-semibold text-textPrimary w-full h-[50px] rounded-md mt-4 
                             donateConfermBtn   
                             hover:border-2 hover:border-primary hover:bg-white
                                 ">Donate
@@ -298,6 +295,7 @@
                 </div>
 
 
+
             </section>
 
         </section>
@@ -308,10 +306,10 @@
             <!-- donation history card -->
 
             <section id="history_container">
-                
+
                 <!-- your donation history added here -->
 
-
+                
             </section>
 
 
@@ -323,7 +321,6 @@
     <!-- this is main section end -->
 
     <!-- Confirmation modal -->
-    <!-- <button class="btn" onclick="my_modal_4.showModal()">open modal</button> -->
     <dialog id="my_modal_4" class="modal">
         <div class="modal-box w-12/12 md:w-8/12 lg:w-6/12 max-w-5xl text-center text-textPrimary">
             <h3 class="text-4xl font-bold">Congratulations!</h3>
