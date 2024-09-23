@@ -80,7 +80,7 @@ for (const button of buttons) {
 
 
             historyContainer.innerHTML += `
-         <div class="donate_history_card border-2 border-gray-200 mx-4 lg:mx-32 p-4 rounded-lg mt-4
+         <div class="donate_history_card w-auto border-2 border-gray-200 mx-4 lg:mx-32 p-4 rounded-lg mt-4
                 
             ">
                     <h2 class="text-md md:text-xl font-semibold text-textPrimary"><span>${inputValue}</span> Taka is ${donateForText}</h2>
