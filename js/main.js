@@ -89,6 +89,9 @@ for (const button of buttons) {
         `;
 
             // modal
+
+            const modalInputValue = document.getElementById('modalInputValue');
+            modalInputValue.innerText = inputValue;
             const modal = document.getElementById('my_modal_4');
             modal.showModal();
 
@@ -103,14 +106,17 @@ for (const button of buttons) {
 // header sticky
 
 const header = document.getElementById('header-main');
+const buttonContainer = document.getElementById('buttonContainer');
 const scrollAmount = 100;
 
 window.onscroll = function () {
     if (window.scrollY > scrollAmount) {
         header.classList.add('fixed', 'top-0', 'left-0', 'w-full', 'z-10');
         header.classList.add('bg-bgPrimary', 'pb-10');
+        buttonContainer.classList.add('pt-5');
     } else {
         header.classList.remove('fixed', 'top-0', 'left-0', 'w-full', 'z-10');
         header.classList.remove('bg-bgPrimary', 'pb-10');
+        buttonContainer.classList.remove('pt-5');
     }
 }
