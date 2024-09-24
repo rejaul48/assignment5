@@ -48,28 +48,31 @@
 
         <header class="bg-bgPrimary">
 
-            <nav class="flex justify-between items-center pt-3 pb-6 px-5  max-w-[1300px] mx-auto
-        
+            <nav class="justify-between items-center pt-3 pb-6 px-5  max-w-[1300px] mx-auto
+        grid grid-cols-12 
             ">
 
 
                 <div class="left text-center
-                  
+                  col-span-6 md:col-span-4 md:order-1
                    ">
                     <a href="blogs.html" class="text-xl font-semibold bg-primary px-4 py-2 rounded-md">Blogs</a>
                 </div>
+
+                <div class="right flex items-center gap-2
+               col-span-6 md:col-span-4 md:order-3
+                ">
+                    <img src="assets/coin.png" alt="coin png">
+                    <span class="text-xl font-semibold " id="myBalance">5500</span>
+                    <span class="text-xl font-semibold">BDT</span>
+                </div>
+
                 <div class="center flex justify-center items-center gap-2
+                col-span-12  md:col-span-4 md:order-2 mt-6 md:mt-0
                    
                    ">
                     <img src="assets/logo.png" alt="donation logo png" class="w-[35px]">
                     <p class="text-xl font-semibold">Donate Bangladesh</p>
-                </div>
-                <div class="right flex items-center gap-2
-               
-                   ">
-                    <img src="assets/coin.png" alt="coin png">
-                    <span class="text-xl font-semibold " id="myBalance">5500</span>
-                    <span class="text-xl font-semibold">BDT</span>
                 </div>
 
 
@@ -131,7 +134,7 @@
 
                         <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
                             <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
-                            <span class="text-textSecondary donateStatus">0</span>
+                            <span class="text-textSecondary donateStatus">100</span>
                             <span class="text-textSecondary">BDT</span>
                         </button>
 
@@ -233,7 +236,7 @@
 
                         <button class="flex gap-1 items-center bg-statusBtn px-3 py-2 rounded-md">
                             <span><img src="assets/coin.png" alt="" class="w-[20px]"></span>
-                            <span class="text-textSecondary donateStatus">0</span>
+                            <span class="text-textSecondary donateStatus">500</span>
                             <span class="text-textSecondary">BDT</span>
                         </button>
 
