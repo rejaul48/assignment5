@@ -40,9 +40,9 @@ for (const button of buttons) {
 
     button.addEventListener('click', function () {
 
-        const balanceNum = parseInt(myBalance.innerText);
+        const balanceNum = parseFloat(myBalance.innerText);
         const inputField = button.previousElementSibling;
-        const inputValue = parseInt(inputField.value);
+        const inputValue = parseFloat(inputField.value);
 
         if (inputField.value === '') {
             alert('please Enter the donate amount');
@@ -70,7 +70,7 @@ for (const button of buttons) {
 
             // get donate Status 
             const donateStatus = nearCard.querySelector('.donateStatus');
-            const donateStatusValue = parseInt(donateStatus.innerText);
+            const donateStatusValue = parseFloat(donateStatus.innerText);
 
             donateStatus.innerText = donateStatusValue + inputValue;
 
@@ -102,19 +102,19 @@ for (const button of buttons) {
 
 
 // header sticky
+// use this code header also sticky 
+// const header = document.getElementById('header-main');
+// const buttonContainer = document.getElementById('buttonContainer');
+// const scrollAmount = 100;
 
-const header = document.getElementById('header-main');
-const buttonContainer = document.getElementById('buttonContainer');
-const scrollAmount = 100;
-
-window.onscroll = function () {
-    if (window.scrollY > scrollAmount) {
-        header.classList.add('fixed', 'top-0', 'left-0', 'w-full', 'z-10');
-        header.classList.add('bg-bgPrimary', 'pb-10');
-        buttonContainer.classList.add('pt-5');
-    } else {
-        header.classList.remove('fixed', 'top-0', 'left-0', 'w-full', 'z-10');
-        header.classList.remove('bg-bgPrimary', 'pb-10');
-        buttonContainer.classList.remove('pt-5');
-    }
-}
+// window.onscroll = function () {
+//     if (window.scrollY > scrollAmount) {
+//         header.classList.add('fixed', 'top-0', 'left-0', 'w-full', 'z-10');
+//         header.classList.add('bg-white','bg-opacity-50','backdrop-blur-md', 'pb-10');
+//         // buttonContainer.classList.add('pt-5');
+//     } else {
+//         header.classList.remove('fixed', 'top-0', 'left-0', 'w-full', 'z-10');
+//         header.classList.remove('bg-bgPrimary', 'pb-10');
+//         buttonContainer.classList.remove('pt-5');
+//     }
+// }
